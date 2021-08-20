@@ -1,0 +1,103 @@
+.pic {
+    &__list {
+        padding-top: 160px;
+        padding-bottom: 200px;
+        padding-left: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        // ::before {
+        //     content: "";
+        //     position: absolute;
+        //     // top: 0px;
+        //     // left: 10px;
+        //     bottom: -200px;
+        //     width: 251px;
+        //     border: 10px solid #E5ECF4;
+        //     transform: translateX(-250px);
+        //     background-image: url(../../image/phone.svg);
+        //     background-size: 96px;
+        //     background-position: center center;
+        // }
+    }
+    &__item {
+        list-style-type: none;
+        margin-left: 30px;
+       
+       
+    }
+    &__text {
+        margin-bottom: 27px;
+    }
+    &__img {
+      margin-bottom: 40px;  
+      border-radius: 50%;
+      max-width: 96px;
+      max-height: 96px;
+      margin-right: 79px;
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+
+    }
+    &__text {
+        max-width: 350px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+.pic__container ul {
+    position: relative;
+    display: flex;
+}
+@media screen and(max-width: 768px) {
+    .pic__list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    &__img {
+        margin-bottom: 40px;  
+        transform: translateX(-100px);
+    }
+    .pic__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+}
+
+@media screen and(max-width: 375px) {
+    .pic__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .pic__img {
+        margin-bottom: 40px; 
+        margin-right: 0; 
+        // transform: translateX(-100px);
+    }
+    .pic__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 120px auto;
+        margin-bottom: 40px;
+    }
+    .pic__title {
+        text-align: center;
+    }
+    .pic__text {
+        text-align: center;
+    }
+}

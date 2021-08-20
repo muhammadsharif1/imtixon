@@ -1,0 +1,95 @@
+.hero__container::before {
+        content: '';
+        position: absolute;
+        background-image: url(../../image/left.png);
+        background-size: 740px;
+}
+.hero__container:nth-child(odd){
+    background-image: url(../../image/Mask.png);
+    background-repeat: no-repeat;
+    background-position:top right;
+    position: relative;
+    
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 329px;
+
+    &__left {
+        max-width: 445px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin-bottom: 40px;
+    } 
+    &__link {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffffff;
+        padding: 14px 39px;
+        background-color: #FCB72B;
+        text-decoration: none;
+    }
+    &__right--img {
+        border-radius: 50%;
+    }
+}
+@media screen and(max-width:768px) {
+    .table {
+        display: flex;
+        flex-direction: column-reverse;
+        &__title {
+            text-align: center;
+            margin-top: 56px;
+            margin-bottom: 40px;
+        }
+        &__text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__link {
+           display: block;
+           width: 180px;
+           margin: 0 auto;
+        }
+    }
+    .asd {
+        flex-direction: column;
+    }
+}
+@media screen  and (max-width:375px) {
+    .table {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 120px;
+        padding: 0;
+        &__title {
+            margin-bottom: 32px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__text {
+            margin-bottom: 32px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+    
